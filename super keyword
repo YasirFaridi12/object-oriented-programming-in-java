@@ -1,0 +1,23 @@
+class Parent {
+
+    String color = "Black";
+}
+
+class Child extends Parent {
+
+    String color = "White";
+
+    void showColor() {
+        System.out.println(super.color);
+    }
+}
+
+public class SuperKeyword {
+
+    public static void main(String[] args) {
+
+        Child c = new Child();
+
+        c.showColor();
+    }
+}
